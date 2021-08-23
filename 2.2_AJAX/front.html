@@ -1,0 +1,46 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	/*
+	** request GET method
+	*/
+
+	/*
+	// basic
+	axios.get(`https://www.zerocho.com/api/get`)
+		.then((result) => {
+			console.log(result);
+			console.log(result.data);
+		})
+		.catch((error) => {
+			console.log(error);
+		});
+	*/
+	/*
+	// async/await
+	(async () => {
+		try {
+			const result = await axios.get(`https://www.zerocho.com/api/get`);
+			console.log(result);
+			console.log(result.data);
+		} catch (error) {
+			console.log(error);
+		}
+	})();
+	*/
+
+	/*
+	**  request POST Method
+	*/
+	(async () => {
+		try {
+			const result = await axios.post('https://www.zerocho.com/api/post/json', {
+				name: 'zerocho',
+				birth: 1994,
+			});
+			console.log(result);
+			console.log(result.data);
+		} catch (error) {
+			console.error(error);
+		}
+	})();
+</script>
