@@ -1,0 +1,10 @@
+<ul>
+	<li data-id="1" data-user-job="programmer">ONE</li>
+	<li data-id="2" data-user-job="designer">TWO</li>
+	<li data-id="3" data-user-job="CEO">THREE</li>
+</ul>
+<script>
+	console.log(document.querySelector(`li`).dataset);  // { id: 1, userJob: programmer }
+	console.log(document.querySelector(`li`).dataset[1]);  // undefined
+	console.log(document.querySelector(`li`));  // 첫번째 li 를 찾음
+</script>
