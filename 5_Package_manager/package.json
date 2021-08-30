@@ -1,0 +1,14 @@
+{
+  "name": "practice_npm",
+  "version": "1.0.0",
+  "description": "practice Node Package Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mykang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
